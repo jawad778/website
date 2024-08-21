@@ -1,0 +1,31 @@
+﻿@model Crud.Models.UserAccount;
+<div class="container">
+    <h1 class="text-center mt-5">Employee Registration</h1>
+<form>
+    <div class="form-group mt-5">
+        <label for="exampleInputEmail1" class="form-label">User Email</label>
+            <input asp-for="Useremail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter User Email">
+       
+    </div>
+        <div class="form-group mt-5">
+        <label for="exampleInputPassword1" class="form-label">User Name</label>
+            <input asp-for="Username" type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter User Name">
+    </div>
+
+        <div class="form-group mt-5">
+            <label for="exampleInputPassword1" class="form-label">User Designation</label>
+            <select class="form-control" asp-for="UserDasignation">
+                <option value="dispatcher">Dispatcher</option>
+                <option value="branch manager">Branch Manager</option>
+                <option value="servent">Servent</option>
+                <option value="cashier">Cashier</option>
+                <option value="count Field">Counter Men</option>
+            </select>
+        </div>
+        <div class="form-group mt-5">
+            <label for="exampleInputPassword1" class="form-label">User Resume</label>
+            <input type="file" class="form-control" id="exampleInputPassword1">
+        </div>
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+</form>
+</div>
